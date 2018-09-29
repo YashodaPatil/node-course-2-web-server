@@ -50,6 +50,12 @@ res.render('about.hbs', {
 });
 });
 
+app.get('/projects',(req,res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
 app.get('/bad', (req,res) => {
   res.send({
     errorMessage: 'unable to send request'
